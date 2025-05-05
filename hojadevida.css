@@ -1,0 +1,107 @@
+/*resetea los estilos automaticos que pueden venir por default del navegador*/
+* {
+  margin: 0; /*para que el contenido no se pegue al borde del navegador*/
+  padding: 0; /*que el texto no este pegado al contenedorr*/
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  background: #f0f0f0; /*fondo de la pagina*/
+  color: #333333; /* letras del fondo blanco*/
+}
+
+/* el contenedor principal ocupa hasta 1000px y el alto de toda la pantalla */
+.container {
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: auto; /*centra los dos contenedores*/
+  display: flex;
+  background: #fff;
+}
+
+/* espacio entre los bloques y el texto*/
+.sidebar, .main { 
+  padding: 40px;
+}
+
+/* parte izquierda del cv */
+.sidebar {
+  background: #333; /* fondo oscuro */
+  color: #fff; /* texto blanco */
+  flex: 1 1 250px; /* tamaño flexible */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centra los elementos */
+}
+
+/* imagen del perfil */
+.sidebar img {
+  width: 90px; /* tamaño de la imagen */
+  height: auto;
+}
+
+/* nombre */
+.sidebar h1 {
+  margin-top: 10px;
+  text-transform: uppercase; /* todo en mayúsculas visuales */
+  text-align: center;
+}
+
+/* título pequeño debajo del nombre */
+.sidebar h2 {
+  font-size: 1em;
+  color: #ccc;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* subtítulos como "perfil" o "contacto" */
+.sidebar h3 {
+  margin: 20px 0 10px;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+/* párrafos de la barra lateral */
+.sidebar p {
+  color: #bbb;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+/* título de cada sección */
+.section h3 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background: #ccc;
+  color: #333;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+/* bloque de información dentro de una sección */
+.item {
+  margin-bottom: 15px;
+}
+
+/* textos generales dentro del bloque */
+.item p {
+  margin-bottom: 5px;
+  font-size: 0.9em;
+}
+
+/* título de cada experiencia o proyecto */
+.item .title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* pone en gris las fechas */
+.item .date {
+  color: #777;
+  font-size: 0.85em;
+}
+
